@@ -37,23 +37,19 @@
             <link rel="shortcut icon" href="/++theme++erben.jmstheme/img/favicon.ico" type="images/x-icon" />
         </after>-->
 
+        <after theme="/html/body"
+               content="//div[@data-iframe='plone-toolbar']" />
+
         <!-- Copy over the id/class attributes on the body tag.
              This is important for per-section styling -->
         <merge attributes="class" css:content="body" css:theme="body" />
         <copy attributes="id dir" css:content="body" css:theme="body" />
 
         <!-- CMSUI Editbar replacements -->
-        <drop css:theme="#editbar-wrapper"
-            css:if-content="#anon-personalbar" />
-        <!--<replace css:theme-children="#editbar" css:content="#edit-bar" />-->
-        <replace css:theme="#editbar-wrapper"
-            css:content="#toolbar" />
-
-        <replace css:theme-children="#personal-tools" 
-            css:content-children="#portal-personaltools" />
+        <drop css:theme="#toolbar" />
 
         <!-- Logo (link target) -->
-        <copy attributes="href" css:content="#portal-logo" css:theme="a.brand" />
+        <copy attributes="href" css:content="#portal-logo" css:theme="#brandname" />
 
         <!-- Site actions -->
         <!--<replace css:content="#portal-siteactions li" css:theme-children="#global-nav" />-->

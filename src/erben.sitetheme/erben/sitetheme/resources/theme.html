@@ -25,30 +25,31 @@
 
   <body>
 
-    <header id="topbar">
-      <div id="toolbar" class="navbar navbar-inverse navbar-fixed-top">
-          <a class="navbar-brand" href="#">Plone Toolbar</a>
-      </div>
-
-      <!-- Twitter boostrap based default navigation -->
-      <nav class="navbar">
-        <div class="container">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" id="brand" href="#">Project name</a>
-          <div class="nav-collapse collapse navbar-responsive-collapse">
-            <ul class="nav navbar-nav" id="main-nav">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
-            </ul>
-          </div><!-- /.nav-collapse -->
-        </div>
-      </nav>
+    <header id="toolbar" class="navbar navbar-inverse navbar-fixed-top">
+        <a class="navbar-brand" href="#">Plone Toolbar</a>
     </header>
+
+    <header id="topbar">
+      <div class="container">
+        <div class="row">
+          <div class="col col-lg-4" id="topbar-brand">
+            <h3><a href="/" id="brandname">Reiner Erben</a></h3>
+            <h5>MdL</h5>
+          </div>
+          <div class="col col-lg-8">
+            <nav class="main-navbar">
+              <ul class="nav nav-pills pull-right" id="main-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Vita</a></li>
+                <li><a href="#">Blog</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <hr>
 
     <section class="container">
       <div id="content">
@@ -56,25 +57,25 @@
           <h1>Starter template <small>The barebone minimal</small></h1>
         </header>
         <p class="lead">Use this document as a way to quick start any new project.<br> All you get is this message and a barebones HTML document.</p>
-      </div>
-      <hr>
-      <div class="row">
-        <div class="col col-lg-4">
-            <p>
-              Use the provided Blokk web font to display lorem ipsum placeholder
-              text.</p>
-            <p class="text-muted">The effect is archieved by using the provided
-              <em>.wireframed</em>
-              class on an element or directly via stylesheet:
-            </p>
-            <code>font-family: 'Blokk';</code>
-        </div>
-        <div class="col col-lg-8">
-          <div class="wireframed">
-            <p>Plaeceholder texts that don't actually have a meaning are rather harsh and
-              therefore somewhat bad when it comes to line length, width and overall layout</p>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.</p>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.</p>
+        <hr>
+        <div class="row">
+          <div class="col col-lg-4">
+              <p>
+                Use the provided Blokk web font to display lorem ipsum placeholder
+                text.</p>
+              <p class="text-muted">The effect is archieved by using the provided
+                <em>.wireframed</em>
+                class on an element or directly via stylesheet:
+              </p>
+              <code>font-family: 'Blokk';</code>
+          </div>
+          <div class="col col-lg-8">
+            <div class="wireframed">
+              <p>Plaeceholder texts that don't actually have a meaning are rather harsh and
+                therefore somewhat bad when it comes to line length, width and overall layout</p>
+              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.</p>
+              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.</p>
+            </div>
           </div>
         </div>
       </div>
@@ -82,7 +83,7 @@
 
     <footer id="site-footer">
       <div class="container">
-        <p>&copy; ACME Corp. 2012</p>
+        <p>&copy; B&uuml;ndnis 90 / Die Gr&uuml;nen</p>
       </div>
     </footer>
 
@@ -90,6 +91,18 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="../js/application.js"></script>
-
+    <script type="text/javascript">
+    WebFontConfig = {
+      google: { families: [ 'Raleway::latin', 'Yanone+Kaffesatz:400,700:latin' ] }
+    };
+    (function() {
+      var wf = document.createElement('script');
+      wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+        '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+      wf.type = 'text/javascript';
+      wf.async = 'true';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(wf, s);
+    })(); </script>
   </body>
 </html>
