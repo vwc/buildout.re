@@ -1,0 +1,67 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="context/main_template/macros/master"
+      i18n:domain="erben.blog">
+<body>
+
+<metal:main fill-slot="main">
+  <metal:content-core define-macro="main">
+  <section class="row"
+    tal:define="toLocalizedTime nocall:context/@@plone/toLocalizedTime;">
+    <div class="col col-lg-3">
+      <div class="xtext-center" id="blog-entry-meta">
+        <span class="icon-stack">
+          <i class="icon-circle icon-4x icon-stack-base"></i>
+          <i class="icon-file icon-4x icon-light"></i>
+        </span><br />
+        <h3 tal:content="python:toLocalizedTime(context.EffectiveDate())" />
+        <hr>
+          <div i18n:domain="plone"
+               id="category"
+               class="documentByLine text-left"
+               tal:define="categories context/Subject|nothing;
+                           url_quote  nocall:modules/Products.PythonScripts.standard/url_quote;"
+               tal:condition="categories">
+            <h5><tal:filedunder i18n:translate="label_filed_under">Filed under:</tal:filedunder></h5>
+            <span tal:repeat="category categories">
+              <a href=""
+                 class="link-category"
+                 rel="tag"
+                 tal:content="category"
+                 tal:define="quotedCat python:url_quote(category)"
+                 tal:attributes="href string:${context/@@plone_portal_state/navigation_root_url}/@@search?Subject%3Alist=${quotedCat}">
+                Category
+                </a><span class="separator" tal:condition="not: repeat/category/end">,</span>
+            </span>
+          </div>
+
+      </div>
+    </div>
+    <div class="col col-lg-9">
+      <article class="blog-entry">
+        <header class="page-header">
+          <h1><br />
+            <span tal:content="context/Title">Title inserted here</span>
+          </h1>
+        </header>
+        <section tal:condition="context/Description">
+          <p class="lead" tal:content="context/Description" />
+        </section>
+        <section tal:condition="context/text">
+          <div tal:replace="structure context/text/output" />
+        </section>
+        <aside>
+          <div tal:content="structure provider:plone.belowcontenttitle" />
+        </aside>
+      </article>
+    </div>
+  </section>
+  </metal:content-core>
+</metal:main>
+
+</body>
+</html>
+

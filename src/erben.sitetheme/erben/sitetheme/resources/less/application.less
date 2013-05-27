@@ -34,11 +34,13 @@ h1, h2, h3, h4, h5, h6,
       }
     }
     &.active > a,
+    &.selected > a,
     &.active > a:hover,
+    &.selected > a:hover,
     &.active > a:focus {
       color: @gray;
       background-color: @body-bg;
-      border: 1px solid #ddd;
+      border-radius: 0px;
       border-bottom-color: transparent;
       cursor: default;
     }
@@ -49,6 +51,7 @@ h1, h2, h3, h4, h5, h6,
   h3 {
     color: #fff;
     margin-bottom: 0px;
+    font-size: ceil(@font-size-base * 2.5);
     > a,
     > a:hover {
       color: #fff;
@@ -88,6 +91,14 @@ h1, h2, h3, h4, h5, h6,
 
 .documentDescription {
   .lead();
+}
+
+#blog-entry-meta {
+  padding: @line-height-computed * 2.5 @line-height-computed 0 0;
+  .icon-stack {
+    font-size: @font-size-base * 4.5;
+    color: @gray;
+  }
 }
 
 
