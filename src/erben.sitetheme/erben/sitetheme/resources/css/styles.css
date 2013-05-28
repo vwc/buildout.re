@@ -6818,8 +6818,41 @@ h6,
   padding: 14px;
   border-bottom: 1px solid #999999;
 }
+.portlet .portletHeader:before {
+  content: "\f081";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  -webkit-font-smoothing: antialiased;
+  *margin-right: .3em;
+}
 .portlet .portletItem {
+  overflow: hidden;
+  zoom: 1;
+  margin-top: 15px;
   padding: 14px;
+  border-bottom: 1px solid #eeeeee;
+}
+.portlet .portletItem .tweetPicture {
+  display: block;
+}
+.portlet .portletItem .tweetPicture img {
+  padding: 4px;
+  line-height: 1.428571429;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  display: inline-block;
+  border-radius: 0;
+}
+.portlet .portletItem .tweetDate {
+  color: #999999;
+  font-size: 14px;
 }
 .portlet .portletFooter {
   padding: 14px;

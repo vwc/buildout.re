@@ -70,9 +70,31 @@ h1, h2, h3, h4, h5, h6,
     font-size: @font-size-base * 1.5;
     padding: @padding-large-vertical;
     border-bottom: 1px solid @gray-light;
+    &:before {
+      content: "\f081";
+      font-family: FontAwesome;
+      font-weight: normal;
+      font-style: normal;
+      text-decoration: inherit;
+      -webkit-font-smoothing: antialiased;
+      *margin-right: .3em; // fixes ie7 issues
+    }
   }
   .portletItem {
+    .media();
     padding: @padding-large-vertical;
+    border-bottom: 1px solid @gray-lighter;
+    .tweetPicture {
+      .media-object();
+      img {
+        .img-thumbnail();
+        border-radius: 0;
+      }
+    }
+    .tweetDate {
+      .text-muted();
+      font-size: @font-size-small;
+    }
   }
   .portletFooter {
     padding: @padding-large-vertical;
