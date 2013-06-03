@@ -76,11 +76,13 @@ p.lead {
   }
   #brandname {
     background:url(../img/badge.png) no-repeat 0 0 transparent;
-    border: 1px solid @gray;
     display: block;
-    .size(335px, 230px);
+    .size(340px, 245px);
     position:absolute;
     z-index: 1;
+    text-indent: -3000px;
+    overflow:hidden;
+    .background-size(cover);
   }
 }
 
@@ -98,6 +100,20 @@ p.lead {
   }
 }
 
+// Blog specific styles
+
+.blog-list {
+  .blog-list-entry {
+    .page-header {
+      background: @gray-lighter;
+      padding: @line-height-computed / 2;
+      h2 {
+        margin: 0px;
+      }
+    }
+  }
+}
+
 
 .tile-cta {
   margin-bottom: @line-height-computed;
@@ -108,11 +124,13 @@ p.lead {
 
 .portlet {
   .portletHeader {
+    font-family: 'Merriweather Sans';
+    font-weight: 400;
     font-size: @font-size-base * 1.5;
     padding: @padding-large-vertical;
     border-bottom: 1px solid @gray-light;
     &:before {
-      content: "\f081";
+      content: "\f099";
       font-family: FontAwesome;
       font-weight: normal;
       font-style: normal;
@@ -132,8 +150,10 @@ p.lead {
         border-radius: 0;
       }
     }
-    .tweetDate {
+    .tweetBody {
       .text-muted();
+    }
+    .tweetDate {
       font-size: @font-size-small;
     }
   }
@@ -167,6 +187,7 @@ p.lead {
 
 // erben styles for a HMTL5 based site footer
 body > footer {
+    background: @brand-primary;
     margin-top: @line-height-computed;
     padding: @line-height-computed 0;
     border-top: 1px solid @gray-lighter;

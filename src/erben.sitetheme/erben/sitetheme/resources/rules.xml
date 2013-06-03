@@ -69,6 +69,9 @@
         <!-- Document Content -->
         <replace css:content-children="#content" 
             css:theme-children="#content" />
+
+        <after css:theme="#content"
+            css:content="#viewlet-below-content" />
         
         <before css:content=".portalMessage" css:theme="#content" />
         <replace css:content-children="#viewlet-below-content"
@@ -81,7 +84,7 @@
             css:theme-children="#sidebar-right" />
         <!-- erben for the fixed.html template -->
         <replace css:content-children="#portal-column-two > *"
-            css:theme-children="#sidebar" />
+            css:theme-children="#sidebar-content" />
 
     </rules>
 
