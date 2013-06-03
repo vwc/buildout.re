@@ -15,11 +15,12 @@
   </header>-->
 
   <section id="blog-view"
+    class="blog-list"
     tal:condition="view/blogitems"
     tal:define="toLocalizedTime nocall:context/@@plone/toLocalizedTime;">
 
     <tal:block tal:repeat="item view/blogitems">
-      <article>
+      <article class="blog-list-entry">
         <div class="page-header">
           <h2><small tal:content="python:toLocalizedTime(item.effective)" /><br />
             <a href="" tal:attributes="href item/getURL"
@@ -32,7 +33,9 @@
 
         <a href="" class="read-more"
               tal:attributes="href item/getURL">
-              Weiterlesen</a>
+          <i class="icon-chevron-sign-right"></i>
+          Weiterlesen
+        </a>
       </article>
       <hr>
     </tal:block>
