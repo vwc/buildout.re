@@ -6824,18 +6824,10 @@ p.lead {
   padding: 30px 0;
 }
 .topbar-inner #brandname {
-  background: url(../img/badge.png) no-repeat 0 0 transparent;
+  font-size: 31.5px;
+  font-weight: 700;
   display: block;
-  width: 340px;
-  height: 245px;
-  position: absolute;
-  z-index: 1;
-  text-indent: -3000px;
-  overflow: hidden;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  color: #000;
 }
 #hero-unit {
   background: #6fbc1a;
@@ -6844,6 +6836,7 @@ p.lead {
 #hero-unit .hero-unit {
   background: url(../img/eyes-inverse.png) no-repeat 0 0 transparent;
   padding: 10px 0 10px 300px;
+  min-height: 115px;
 }
 #hero-unit .hero-unit h1 {
   font-family: 'Ubuntu';
@@ -6935,6 +6928,22 @@ body > footer {
   margin-top: 20px;
   padding: 20px 0;
   border-top: 1px solid #eeeeee;
+}
+@media screen and (min-width: 992px) {
+  #brandname {
+    background: url(../img/badge.png) no-repeat 0 0 transparent;
+    display: block;
+    width: 340px;
+    height: 245px;
+    position: absolute;
+    z-index: 1;
+    text-indent: -3000px;
+    overflow: hidden;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
 }
 @media screen and (min-width: 1200px) {
   #content {

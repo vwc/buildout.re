@@ -75,14 +75,18 @@ p.lead {
     padding: @line-height-computed * 1.5 0;
   }
   #brandname {
-    background:url(../img/badge.png) no-repeat 0 0 transparent;
+    font-size: @font-size-base * 2.25;
+    font-weight: 700;
     display: block;
-    .size(340px, 245px);
-    position:absolute;
-    z-index: 1;
-    text-indent: -3000px;
-    overflow:hidden;
-    .background-size(cover);
+    color: #000;
+  //  background:url(../img/badge.png) no-repeat 0 0 transparent;
+  //  display: block;
+  //  .size(340px, 245px);
+  //  position:absolute;
+  //  z-index: 1;
+  //  text-indent: -3000px;
+  //  overflow:hidden;
+  //  .background-size(cover);
   }
 }
 
@@ -92,6 +96,7 @@ p.lead {
   .hero-unit {
     background:url(../img/eyes-inverse.png) no-repeat 0 0 transparent;
     padding: @line-height-computed / 2 0 @line-height-computed / 2 @navbar-height * 6;
+    min-height: 115px;
     h1 {
       font-family: 'Ubuntu';
       font-weight: 700;
@@ -193,7 +198,19 @@ body > footer {
     border-top: 1px solid @gray-lighter;
 }
 
-
+// Responsive: Desktops and up
+@media screen and (min-width: @screen-desktop) {
+  #brandname {
+    background:url(../img/badge.png) no-repeat 0 0 transparent;
+    display: block;
+    .size(340px, 245px);
+    position:absolute;
+    z-index: 1;
+    text-indent: -3000px;
+    overflow:hidden;
+    .background-size(cover);
+  }
+}
 
 // Responsive: Large desktops and up
 @media screen and (min-width: @screen-large-desktop) {
