@@ -33,53 +33,52 @@
     <header id="topbar">
       <div class="container">
         <div class="row">
-          <div class="col col-lg-4" id="topbar-brand">
-            <h3><a href="/" id="brandname">Reiner Erben</a></h3>
-            <h5>MdL B&uuml;ndnis 90 / Die Gr&uuml;nen</h5>
-          </div>
           <div class="col col-lg-8">
             <nav class="main-navbar">
-              <ul class="nav nav-pills pull-right" id="main-nav">
+              <ul class="nav nav-pills" id="main-nav">
                 <li class="active"><a href="#">Home</a></li>
                 <li><a href="#">Vita</a></li>
                 <li><a href="#">Blog</a></li>
               </ul>
             </nav>
           </div>
+          <div class="col col-lg-4" id="topbar-brand">
+            <h3><a href="/" id="brandname">Reiner Erben</a></h3>
+            <h5>MdL B&uuml;ndnis 90 / Die Gr&uuml;nen</h5>
+          </div>
         </div>
       </div>
     </header>
 
+    <section id="hero-unit">
+      <div class="container hero-unit">
+        <h1>Reiner Erben</h1>
+      </div>
+    </section>
+
     <section class="container">
-      <div id="content">
-        <header class="page-header">
-          <h1>Starter template <small>The barebone minimal</small></h1>
-        </header>
-        <p class="lead">Use this document as a way to quick start any new project.<br> All you get is this message and a barebones HTML document.</p>
-        <hr>
-        <div class="row">
-          <div class="col col-lg-4">
-              <p>
-                Use the provided Blokk web font to display lorem ipsum placeholder
-                text.</p>
-              <p class="text-muted">The effect is archieved by using the provided
-                <em>.wireframed</em>
-                class on an element or directly via stylesheet:
-              </p>
-              <code>font-family: 'Blokk';</code>
-          </div>
-          <div class="col col-lg-8">
-            <div class="wireframed">
-              <p>Plaeceholder texts that don't actually have a meaning are rather harsh and
-                therefore somewhat bad when it comes to line length, width and overall layout</p>
+      <div class="row">
+        <div class="col col-lg-8">
+          <div  id="content">
+            <header class="page-header">
+              <h1>Starter template <small>The barebone minimal</small></h1>
+            </header>
+            <p class="lead">Use this document as a way to quick start any new project.<br> All you get is this message and a barebones HTML document.</p>
+            <hr>
+              <p>therefore somewhat bad when it comes to line length, width and overall layout</p>
               <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.</p>
               <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.</p>
-            </div>
           </div>
         </div>
+        <div class="col col-lg-4">
+          <aside id="sidebar">
+            <div class="panel">
+              <h4 class="panel-heading">Test Sidebar</h4>
+              <p>More tests</p>
+            </div>
+          </aside>
+        </div>
       </div>
-      <aside id="sidebar">
-      </aside>
     </section> <!-- /container -->
 
     <footer id="site-footer">
@@ -93,7 +92,7 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script type="text/javascript">
     WebFontConfig = {
-      google: { families: [ 'Raleway::latin', 'Yanone+Kaffesatz:400,700:latin' ] }
+      google: { families: [ 'Ubuntu:400,700:latin', 'Merriweather:400,400italic,700italic,700:latin' ] }
     };
     (function() {
       var wf = document.createElement('script');
