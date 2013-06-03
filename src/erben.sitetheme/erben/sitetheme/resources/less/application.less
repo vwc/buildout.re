@@ -29,10 +29,10 @@ p.lead {
 }
 
 #topbar {
-  padding: @line-height-computed 0;
   .nav > li {
     > a {
       color: @gray;
+      text-transform: uppercase;
       &:hover {
         color: @gray-dark;
         background-color: @body-bg;
@@ -69,9 +69,38 @@ p.lead {
   }
 }
 
+.topbar-inner {
+  border-top: 5px solid #000;
+  .main-navbar {
+    padding: @line-height-computed * 1.5 0;
+  }
+  #brandname {
+    background:url(../img/badge.png) no-repeat 0 0 transparent;
+    border: 1px solid @gray;
+    display: block;
+    .size(335px, 230px);
+    position:absolute;
+    z-index: 1;
+  }
+}
+
 #hero-unit {
   background: @brand-primary;
   margin: @line-height-computed 0;
+  .hero-unit {
+    background:url(../img/eyes-inverse.png) no-repeat 0 0 transparent;
+    padding: @line-height-computed / 2 0 @line-height-computed / 2 @navbar-height * 6;
+    h1 {
+      font-family: 'Ubuntu';
+      font-weight: 700;
+      color: #000;
+    }
+  }
+}
+
+
+.tile-cta {
+  margin-bottom: @line-height-computed;
 }
 
 

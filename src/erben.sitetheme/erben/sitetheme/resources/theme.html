@@ -30,8 +30,8 @@
         <a class="navbar-brand" href="#">Plone Toolbar</a>
     </header>
 
-    <header id="topbar">
-      <div class="container">
+    <header id="topbar" class="topbar">
+      <div class="topbar-inner container">
         <div class="row">
           <div class="col col-lg-8">
             <nav class="main-navbar">
@@ -43,8 +43,10 @@
             </nav>
           </div>
           <div class="col col-lg-4" id="topbar-brand">
-            <h3><a href="/" id="brandname">Reiner Erben</a></h3>
-            <h5>MdL B&uuml;ndnis 90 / Die Gr&uuml;nen</h5>
+            <a href="" id="brandname">
+              Reiner Erben MdL<br />
+              B&uuml;ndnis 90 / Die Gr&uuml;nen
+            </a>
           </div>
         </div>
       </div>
@@ -72,9 +74,37 @@
         </div>
         <div class="col col-lg-4">
           <aside id="sidebar">
-            <div class="panel">
-              <h4 class="panel-heading">Test Sidebar</h4>
-              <p>More tests</p>
+            <form id="search" class="hidden-sm" name="search" action="/search">
+                <div class="input-group xspan12">
+                <input id="search-site"
+                    type="text"
+                    name="SearchableText"
+                    title="Search this site&hellip;" accesskey="4"
+                    class="inputLabel roundedleft" size="15"
+                    />
+                <span class="input-group-btn">
+                <button class="btn"
+                    type="submit"
+                    value="Search"
+                    id="search-site-button">
+                    <i class="icon-search"></i>&nbsp;
+                </button>
+                </span>
+                </div>
+            </form>
+            <form class="navbar-form" action="">
+              <input type="text" class="col col-lg-8" placeholder="Search">
+            </form>
+            <hr>
+            <div class="tile tile-cta">
+              <a href="" class="tile-link">
+                <img src="img/panel-cta-signin.png" />
+              </a>
+            </div>
+            <div class="tile tile-cta">
+              <a href="" class="tile-link">
+                <img src="img/panel-cta-taxes.png" />
+              </a>
             </div>
           </aside>
         </div>
