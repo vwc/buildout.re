@@ -7,7 +7,7 @@
     <!-- Add alternativ theme templates -->
     <!-- erben to add minimal theme template for the
          tiles editiong overlays -->
-    <!--<theme href="minimal.html" if-path="@@edit-tile" />-->
+    <theme href="minimal.html" if-path="@@edit-tile" />
     
     <!-- Rules applying to a standard Plone web page -->
     <rules css:if-content="#visual-portal-wrapper">

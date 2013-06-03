@@ -13,7 +13,7 @@
   <div tal:attributes="data-tile string:${context/absolute_url}/@@vwc.tiles.richtext/introduction" />
 
   <section id="blog-view"
-    class="blog-list"
+    class="blog-list visualClear"
     tal:condition="view/blogitems"
     tal:define="toLocalizedTime nocall:context/@@plone/toLocalizedTime;
                 Batch python:modules['Products.CMFPlone'].Batch;
