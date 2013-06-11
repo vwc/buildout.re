@@ -1,6 +1,8 @@
 from five import grok
 from plone.directives import dexterity, form
 from zope import schema
+from plone.indexer import indexer
+
 from plone.namedfile.interfaces import IImageScaleTraversable
 
 from plone.app.textfield import RichText
@@ -21,10 +23,16 @@ class IBlogEntry(form.Schema, IImageScaleTraversable):
         description=_(u"Please enter main body text for this blog entry"),
         required=False,
     )
-    allow_discussion = schema.Bool(
-        title=_(u"Allow discussion on this item?"),
-        default=True,
+    pressitem = schema.Bool(
+        title=_(u"Mark this entry as pressrelease?"),
+        default=False,
     )
+
+
+@indexer(IBlogEntry)
+def pressitemIndexer(obj):
+    return obj.pressitem
+grok.global_adapter(pressitemIndexer, name="pressitem")
 
 
 class BlogEntry(dexterity.Container):

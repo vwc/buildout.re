@@ -2,6 +2,7 @@ import calendar
 from Acquisition import aq_inner
 from DateTime import DateTime
 from five import grok
+from plone import api
 
 from Products.CMFCore.utils import getToolByName
 from Products.CMFPlone.PloneBatch import Batch
@@ -10,8 +11,8 @@ from plone.app.discussion.interfaces import IConversation
 from plone.app.contentlisting.interfaces import IContentListing
 
 from plone.app.layout.navigation.interfaces import INavigationRoot
+from Products.CMFCore.interfaces import IFolderish
 
-from erben.blog.blog import IBlog
 from erben.blog.blogentry import IBlogEntry
 
 
@@ -65,4 +66,22 @@ class BlogView(grok.View):
             query['effective'] = dict(query=(startdate, enddate),
                                       range='minmax')
         results = catalog.searchResults(**query)[:5]
+        return IContentListing(results)
+
+
+class PressView(grok.View):
+    grok.context(IFolderish)
+    grok.require('zope2.View')
+    grok.name('press-view')
+
+    def update(self):
+        self.has_pressitem = len(self.pressitems()) > 0
+
+    def pressitems(self):
+        catalog = api.portal.get_tool(name="portal_catalog")
+        results = catalog(object_provides=IBlogEntry.__identifier__,
+                          review_state="published",
+                          pressitem=True,
+                          sort_on="effective",
+                          sort_order="reverse")
         return IContentListing(results)
