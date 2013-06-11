@@ -20,7 +20,7 @@ env.prod_user = 'www'
 def deploy():
     """ Deploy current master to production server """
     project.site.update()
-    project.site.estart()
+    project.site.restart()
 
 
 @task
