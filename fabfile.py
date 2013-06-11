@@ -1,9 +1,8 @@
 from fabric.api import task
-from fabric.api import cd
 from fabric.api import env
-from fabric.api import run
 
 from ade25.fabfiles import project
+from ade25.fabfiles.project import db
 
 env.use_ssh_config = True
 env.forward_agent = True
@@ -16,12 +15,6 @@ env.local_root = '/Users/cb/dev/erben/buildout.re'
 env.sitename = 'plonesite'
 env.code_user = 'root'
 env.prod_user = 'www'
-
-
-def supervisorctl(*cmd):
-    """Runs an arbitrary supervisorctl command."""
-    with cd(env.webserver):
-        run('bin/supervisorctl ' + ' '.join(cmd))
 
 
 @task
@@ -45,3 +38,9 @@ def rebuild():
     project.site.update()
     project.site.build_full()
     project.site.restart()
+
+
+@task
+def get_data():
+    """ Copy live database for local development """
+    db.download_data()
