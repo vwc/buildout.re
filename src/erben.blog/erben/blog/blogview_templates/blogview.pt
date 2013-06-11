@@ -10,8 +10,18 @@
 <metal:main fill-slot="main">
   <metal:content-core define-macro="main">
 
-  <div tal:attributes="data-tile string:${context/absolute_url}/@@vwc.tiles.richtext/introduction" />
-
+  <section id="hero-unit">
+      <div class="container hero-unit hero-unit-highlight">
+        <h1 class="hidden-sm">Reiner Erben</h1>
+        <div class="hero-claim hidden-sm">
+          <div tal:attributes="data-tile string:${context/absolute_url}/@@vwc.tiles.plaintext/claim" />
+        </div>
+        <img src="++theme++erben.sitetheme/img/signature.png" 
+          class="hidden-sm" />
+      </div>
+  </section>
+  
+  <div id="content-core">
   <section id="blog-view"
     class="blog-list visualClear"
     tal:condition="view/blogitems"
@@ -19,6 +29,8 @@
                 Batch python:modules['Products.CMFPlone'].Batch;
                 b_size python:5;b_start python:0;b_start request/b_start | b_start;">
 
+    <div tal:attributes="data-tile string:${context/absolute_url}/@@vwc.tiles.richtext/introduction" />
+    <div class="visualClear" />
     <tal:entries tal:define="items view/blogitems">
     <tal:block tal:repeat="item items">
       <article class="blog-list-entry">
@@ -56,6 +68,7 @@
       tal:attributes="href python:portal_url + '/blog'">
       <i class="icon-plus-sign" />
       Weitere Artikel</a>
+  </div>
   </div>
   </metal:content-core>
 </metal:main>

@@ -6835,13 +6835,19 @@ p.lead {
 }
 #hero-unit .hero-unit {
   background: url(../img/eyes-inverse.png) no-repeat 0 0 transparent;
-  padding: 15px 0 10px 300px;
-  min-height: 115px;
+  padding: 30px 0 10px 10px;
+  min-height: 110px;
 }
 #hero-unit .hero-unit h1 {
   font-family: 'Ubuntu';
   font-weight: 700;
   color: #000;
+}
+#hero-unit .hero-unit .hero-claim {
+  padding: 20px 20px 0 0;
+  font-family: 'Ubuntu';
+  font-weight: 700;
+  font-size: 21px;
 }
 .blog-list .blog-list-entry .page-header {
   background: #eeeeee;
@@ -6929,6 +6935,15 @@ body > footer {
   padding: 20px 0;
   border-top: 1px solid #eeeeee;
 }
+body > footer #site-footer-social-links a {
+  color: #333333;
+  text-decoration: none;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .hero-unit h1 {
+    margin-left: 300px;
+  }
+}
 @media screen and (min-width: 992px) {
   #brandname {
     background: url(../img/badge.png) no-repeat 0 0 transparent;
@@ -6944,9 +6959,23 @@ body > footer {
     -o-background-size: cover;
     background-size: cover;
   }
+  .hero-unit h1,
+  .hero-unit img {
+    margin-left: 300px;
+  }
+  body.template-blog-view .hero-unit {
+    background: url(../img/portrait-full.png) no-repeat 0 100% transparent !important;
+    min-height: 330px !important;
+  }
+  body.template-blog-view .hero-unit .hero-claim {
+    padding: 40px 80px 20px 300px !important;
+  }
 }
 @media screen and (min-width: 1200px) {
   #content {
     font-size: 18px;
+  }
+  .hero-claim {
+    padding-top: 20px !important;
   }
 }

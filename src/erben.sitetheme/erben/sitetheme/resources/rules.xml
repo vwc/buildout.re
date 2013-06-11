@@ -67,6 +67,14 @@
             css:theme-children='#breadcrumbs' />
 
         <!-- Document Content -->
+
+        <rules css:if-content="body.template-blog-view">
+            <replace css:content-children="#hero-unit" 
+                css:theme-children="#hero-unit" />
+            <replace css:content-children="#content-core" 
+                css:theme-children="#content" />
+        </rules>
+
         <replace css:content-children="#content" 
             css:theme-children="#content" />
 
