@@ -11,7 +11,7 @@ env.hosts = ['6zu4']
 env.webserver = '/opt/webserver/buildout.webserver'
 env.code_root = '/opt/sites/re/buildout.re'
 env.local_root = '/Users/cb/dev/erben/buildout.re'
-env.sitename = 'plonesite'
+env.sitename = 're'
 env.code_user = 'root'
 env.prod_user = 'www'
 
@@ -20,7 +20,7 @@ env.prod_user = 'www'
 def deploy():
     """ Deploy current master to production server """
     project.site.update()
-    project.site.estart()
+    project.site.restart()
 
 
 @task
