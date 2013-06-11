@@ -2,7 +2,6 @@ from fabric.api import task
 from fabric.api import env
 
 from ade25.fabfiles import project
-from ade25.fabfiles.project import db
 
 env.use_ssh_config = True
 env.forward_agent = True
@@ -43,4 +42,4 @@ def rebuild():
 @task
 def get_data():
     """ Copy live database for local development """
-    db.download_data()
+    project.db.download_data()
