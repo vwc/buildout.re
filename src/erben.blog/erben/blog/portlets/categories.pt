@@ -1,8 +1,9 @@
-<div class="well"
+<div class="tile"
      id="infobox-blog-categories"
      i18n:domain="erben.blog">
 
     <h4>
+      <i class="icon-list-alt"></i>
         <i18n:block translate="">Categories</i18n:block>
     </h4>
 

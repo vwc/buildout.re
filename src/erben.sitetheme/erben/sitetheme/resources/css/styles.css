@@ -6781,6 +6781,9 @@ p.lead {
   font-style: italic;
   color: #999999;
 }
+input.context {
+  margin-right: 10px;
+}
 #toolbar + #topbar {
   margin-top: 50px;
 }
@@ -6798,7 +6801,7 @@ p.lead {
 #topbar .nav > li.active > a:hover,
 #topbar .nav > li.selected > a:hover,
 #topbar .nav > li.active > a:focus {
-  color: #555555;
+  color: #6fbc1a;
   background-color: #ffffff;
   border-radius: 0px;
   border-bottom-color: transparent;

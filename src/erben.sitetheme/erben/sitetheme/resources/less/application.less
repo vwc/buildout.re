@@ -24,6 +24,10 @@ p.lead {
   .text-muted();
 }
 
+input.context {
+  margin-right: @line-height-computed / 2;
+}
+
 #toolbar + #topbar {
     margin-top: @navbar-height;
 }
@@ -44,7 +48,7 @@ p.lead {
     &.active > a:hover,
     &.selected > a:hover,
     &.active > a:focus {
-      color: @gray;
+      color: @brand-primary;
       background-color: @body-bg;
       border-radius: 0px;
       border-bottom-color: transparent;
