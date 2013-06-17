@@ -48,7 +48,7 @@
           </h2>
         </div>
           <p tal:condition="item/Description"
-            class="documentDescription lead"
+            class="blog-entry-description"
             tal:content="item/Description" />
 
           <footer>
