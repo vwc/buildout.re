@@ -6941,6 +6941,9 @@ body > footer {
   padding: 20px 0;
   border-top: 1px solid #eeeeee;
 }
+body > footer .footer-content a {
+  color: #eeeeee;
+}
 body > footer #site-footer-social-links a {
   color: #333333;
   text-decoration: none;
