@@ -8,6 +8,8 @@
     <!-- erben to add minimal theme template for the
          tiles editiong overlays -->
     <theme href="minimal.html" if-path="@@edit-tile" />
+
+    <theme href="calendar.html" css:if-content="body.section-termine"  />
     
     <!-- Rules applying to a standard Plone web page -->
     <rules css:if-content="#visual-portal-wrapper">
