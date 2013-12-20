@@ -42,6 +42,12 @@
                 tal:content="item/Title" />
           </h2>
         </div>
+          <img tal:condition="item/image"
+              tal:define="item_obj item/getObject;
+                           scales item_obj/@@images"
+              tal:replace="structure python: scales.tag('image',
+                           width=200, height=200, direction='down')"
+            />
           <p tal:condition="item/Description"
             class="blog-description"
             tal:content="item/Description" />

@@ -211,7 +211,7 @@ table {
   img {
     max-width: 100% !important;
   }
-  @page  {
+  @page {
     margin: 2cm .5cm;
   }
   p,
@@ -466,10 +466,8 @@ dd {
 .dl-horizontal:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .dl-horizontal:after {
   clear: both;
@@ -478,10 +476,8 @@ dd {
 .dl-horizontal:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .dl-horizontal:after {
   clear: both;
@@ -617,10 +613,8 @@ pre code {
 .container:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .container:after {
   clear: both;
@@ -629,10 +623,8 @@ pre code {
 .container:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .container:after {
   clear: both;
@@ -641,10 +633,8 @@ pre code {
 .row:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .row:after {
   clear: both;
@@ -653,10 +643,8 @@ pre code {
 .row:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .row:after {
   clear: both;
@@ -1139,14 +1127,12 @@ input[type="checkbox"] {
   margin: 4px 0 0;
   margin-top: 1px \9;
   /* IE8-9 */
-
   line-height: normal;
 }
 select,
 input[type="file"] {
   height: 36px;
   /* In IE7, the height of the select element cannot be changed by height, only font-size. TODO: Check if this is still needed when dropping IE7 support */
-
   line-height: 36px;
 }
 select[multiple],
@@ -2621,10 +2607,8 @@ button.close {
 .nav:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .nav:after {
   clear: both;
@@ -2633,10 +2617,8 @@ button.close {
 .nav:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .nav:after {
   clear: both;
@@ -2782,10 +2764,8 @@ button.close {
 .tabbable:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .tabbable:after {
   clear: both;
@@ -2794,10 +2774,8 @@ button.close {
 .tabbable:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .tabbable:after {
   clear: both;
@@ -2835,10 +2813,8 @@ button.close {
 .navbar:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .navbar:after {
   clear: both;
@@ -2847,10 +2823,8 @@ button.close {
 .navbar:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .navbar:after {
   clear: both;
@@ -3137,10 +3111,8 @@ button.close {
 .btn-toolbar:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .btn-toolbar:after {
   clear: both;
@@ -3149,10 +3121,8 @@ button.close {
 .btn-toolbar:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .btn-toolbar:after {
   clear: both;
@@ -3368,10 +3338,8 @@ button.close {
 .pager:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .pager:after {
   clear: both;
@@ -3380,10 +3348,8 @@ button.close {
 .pager:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .pager:after {
   clear: both;
@@ -3510,10 +3476,8 @@ button.close {
 .modal-footer:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .modal-footer:after {
   clear: both;
@@ -3522,10 +3486,8 @@ button.close {
 .modal-footer:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .modal-footer:after {
   clear: both;
@@ -4294,10 +4256,8 @@ a.list-group-item.active > .badge,
 .clearfix:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .clearfix:after {
   clear: both;
@@ -4488,7 +4448,6 @@ dd.image-caption {
   text-align: left;
   padding: 0 0 0 3px;
   /*image padding+border with*/
-
   margin: 0;
   color: #666;
   font-size: 85%;
@@ -4508,6 +4467,7 @@ input.standalone {
   border: 1px solid transparent;
   border-radius: 4px;
   white-space: nowrap;
+  background-image: none;
   color: #ffffff;
   background-color: #a7a9aa;
   border-color: #a7a9aa;
@@ -4645,10 +4605,8 @@ fieldset[disabled] input.standalone.active {
 .listingBar:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .listingBar:after {
   clear: both;
@@ -4657,10 +4615,8 @@ fieldset[disabled] input.standalone.active {
 .listingBar:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .listingBar:after {
   clear: both;
@@ -4862,10 +4818,8 @@ div.overlay {
   width: auto;
   height: auto;
   /* initially overlay is hidden */
-
   display: none;
   /* some padding to layout nested elements nicely  */
-
   margin: 1em;
   font-size: 80%;
 }
@@ -4875,7 +4829,6 @@ div.overlay-ajax {
   min-height: 100px;
   z-index: 99;
   /* overlays should be above everything */
-
 }
 div.overlay-iframe {
   height: 60%;
@@ -4914,9 +4867,7 @@ div.overlay div.close {
 }
 div.overlay {
   /* Hide form elements that don't make sense within an overlay. */
-
   /* lets play nice with paragraphs, links, tabbed pages in overlay e.g. when plone.openid is installed */
-
 }
 div.overlay div.close span,
 div.overlay div.close a {
@@ -5030,10 +4981,8 @@ ul.formTabs:before,
 ul.formTabs:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 ul.formTabs:after {
   clear: both;
@@ -5042,10 +4991,8 @@ ul.formTabs:before,
 ul.formTabs:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 ul.formTabs:after {
   clear: both;
@@ -5197,7 +5144,6 @@ ul.formTabs li a.selected {
 /* Shared CSS between the two tab types */
 #content-views a {
   /* this isn't supported by all browsers, so we keep it in a separate rule */
-
   display: inline-block;
 }
 #content-views a {
@@ -5447,7 +5393,6 @@ table.grid th {
   background: transparent;
   background-image: none;
   /* safari bug */
-
   border: none;
   height: 0.1em;
   overflow: hidden;
@@ -6750,13 +6695,6 @@ ul.icons-ul > li .icon-li {
   font-weight: normal;
   font-style: normal;
 }
-.make-some-noise {
-  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQAQMAAAC032DuAAAABlBMVEUAAAAAAAClZ7nPAAAAAnRSTlMACHhIRQoAAAN7SURBVCiRAXADj/wAAkQJcM1mLQnAjAAb4sEhBjkWRBpWAIKF/FlkjVDJKKgA0KxA5QFOFWKpQgBG5PjjxiiDVJtnAHD5UwQVQstA7u8AOAYIMPmwiKga2gBooyeQA+jdVxiNABAIYGkr3lgTDBsAXQBAcGFmEGFEXQAwUgJEk6SsEMjDAApsetkgJK9PKJQAfDApaQUONGIDEgAKpcRsXsojEuY1ACYN4xSjdyGRVLcAsCBxpEiAUIkwYgBGLNoX24Yj9iJRAGMGy8gopJFOQvkAEZgtO9HAJC+9WACKQEJCwJGqpRoIAKYmUxdgMdl89AIApMRLQ/2pQLVbBQBDTLPsYJCDUEjoAHzhwoxoCKB4DAgAAN6ASuQFERMyvQCzWAJoFpkGjFsGAGLQnTrBTH4zIKIAFGUFG3UALzJDiwCmsCEwxUDwgFgIAFi/LtLBIAUJNBEAE4TENLhU8TjOCgAtAYILmwxnJrBoAAhNyenNNwViQFkANAFOhHKUo84QUAD0DRiji8DNOMJqADHrmeMWgFAgRrQAmIm9A9EhEGSBSgAulqWIGymRfxpwAH0DAAQSAnKWgdQASeJNibLEQzNOZwBzyCNrQnAEFoQoAAxMomBElggSqkgAAwFV5OAQZJ28ZwCCFaFCjSWxAObRAB8AJgRUj4BKIygApBGgk0MCkUMxFADVwIDCBY+OdMWgAG1xdOROdABshSMACAFX0QKD4hVCgwB2Mh6ZnAco8kNpAHsI4C8RY9CIiewAqyAZg6UNgAz7mgBkAxCbD25svIhqACgzbQNxciGqYNQAkARc2iVSMJ2lZADNJknADN80kC5jAOOUE5OONKUAsA0ARQLA1ABqDAEQCACIlnFgRPrqeUQyAKkAOV/GAUgi1RAAeAIX22Pv4uTlJABvEiKL1OBOaIWIAEsoNPRyRGQcMM0AQmzLIn0jGg0gNAAqsAQfVSb/NB1UAAi0AywKJQUIjCoA85ksYPNtqJExcQAYgoDzhYBwbWAdAKsgPswqlOqHbJMAUQlvpxLB1UzAGABpyxQ0mCs81wNXACHgmQEVxF1T9FUA8jrxkbDXWRJhoQBgoSwOksFRSSibACNkCSFowJxiMBYA4ek2cwRDk1DM8wCQCsQXTxHsamgRAEGGIlVQmcLwKhUAG+wigJjtKYW0HQC0OKRNEGFqXIOAbRpCReUGtgIAAAAASUVORK5CYII=);
-}
-.wireframed {
-  font-family: 'redactedregular';
-  color: #555555;
-}
 body > header {
   margin-bottom: 20px;
 }
@@ -6783,6 +6721,9 @@ p.lead {
 }
 input.context {
   margin-right: 10px;
+}
+.btn {
+  background-image: none;
 }
 #toolbar + #topbar {
   margin-top: 50px;

@@ -6,11 +6,8 @@ from plone.indexer import indexer
 from plone.namedfile.interfaces import IImageScaleTraversable
 
 from plone.app.textfield import RichText
-try:
-    from plone.app.discussion.interfaces import IConversation
-    USE_PAD = True
-except ImportError:
-    USE_PAD = False
+from plone.namedfile.field import NamedBlobImage
+
 from erben.blog import MessageFactory as _
 
 
@@ -21,6 +18,16 @@ class IBlogEntry(form.Schema, IImageScaleTraversable):
     text = RichText(
         title=_(u"Blog Entry"),
         description=_(u"Please enter main body text for this blog entry"),
+        required=False,
+    )
+    form.fieldset(
+        'details',
+        label=_(u"Details"),
+        fields=['image', 'pressitem']
+    )
+    image = NamedBlobImage(
+        title=_(u"Preview Image"),
+        description=_(u"Upload optional preview image displayed in listings"),
         required=False,
     )
     pressitem = schema.Bool(
@@ -43,18 +50,3 @@ class View(grok.View):
     grok.context(IBlogEntry)
     grok.require('zope2.View')
     grok.name('view')
-
-    def commentsEnabled(self, ob):
-        if USE_PAD:
-            conversation = IConversation(ob)
-            return conversation.enabled()
-        else:
-            return self.portal_discussion.isDiscussionAllowedFor(ob)
-
-    def commentCount(self, ob):
-        if USE_PAD:
-            conversation = IConversation(ob)
-            return len(conversation)
-        else:
-            discussion = self.portal_discussion.getDiscussionFor(ob)
-            return discussion.replyCount(ob)

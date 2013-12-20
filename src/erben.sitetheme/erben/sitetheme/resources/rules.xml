@@ -48,7 +48,11 @@
         <copy attributes="id dir" css:content="body" css:theme="body" />
 
         <!-- CMSUI Editbar replacements -->
-        <drop css:theme="#toolbar" />
+
+        <drop css:theme="#app-toolbar"
+            css:if-content="#anon-personalbar" />
+        <replace css:theme="#app-toolbar"
+            css:content="#app-toolbar" />
 
         <!-- Logo (link target) -->
         <copy attributes="href" css:content="#portal-logo" css:theme="#brandname" />
