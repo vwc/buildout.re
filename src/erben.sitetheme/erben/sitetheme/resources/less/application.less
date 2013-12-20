@@ -32,11 +32,11 @@ input.context {
   background-image: none;
 }
 
-#toolbar + #topbar {
+#app-toolbar + #app-brandbar {
     margin-top: @navbar-height;
 }
 
-#topbar {
+.app-brandbar {
   .nav > li {
     > a {
       color: @gray;
@@ -77,7 +77,7 @@ input.context {
   }
 }
 
-.topbar-inner {
+.app-brandbar-inner {
   border-top: 5px solid #000;
   .main-navbar {
     padding: @line-height-computed * 1.5 0;
@@ -87,14 +87,6 @@ input.context {
     font-weight: 700;
     display: block;
     color: #000;
-  //  background:url(../img/badge.png) no-repeat 0 0 transparent;
-  //  display: block;
-  //  .size(340px, 245px);
-  //  position:absolute;
-  //  z-index: 1;
-  //  text-indent: -3000px;
-  //  overflow:hidden;
-  //  .background-size(cover);
   }
 }
 
@@ -102,7 +94,7 @@ input.context {
   background: @brand-primary;
   margin: @line-height-computed 0;
   .hero-unit {
-    background:url(../img/eyes-inverse.png) no-repeat 0 0 transparent;
+    background:url(../assets/img/eyes-inverse.png) no-repeat 0 0 transparent;
     padding: @line-height-computed * 1.5 0 @line-height-computed / 2 @line-height-computed / 2;
     min-height: 110px;
     h1 {
@@ -225,23 +217,23 @@ body > footer {
 
 // responsive fixes
 
-@media (min-width: @screen-tablet) and (max-width: @screen-tablet-max) {
+@media (min-width: @screen-sm) and (max-width: @screen-md) {
   .hero-unit h1 {
     margin-left: 300px;
   }
 }
 
 // Responsive: Desktops and up
-@media screen and (min-width: @screen-desktop) {
+@media screen and (min-width: @screen-md) {
   #brandname {
-    background:url(../img/badge.png) no-repeat 0 0 transparent;
+    background:url(../assets/img/badge.png) no-repeat 0 0 transparent;
     display: block;
     .size(340px, 245px);
     position:absolute;
     z-index: 1;
     text-indent: -3000px;
     overflow:hidden;
-    .background-size(cover);
+    background-size:cover;
   }
   .hero-unit h1,
   .hero-unit img {
@@ -249,7 +241,7 @@ body > footer {
   }
   body.template-blog-view {
     .hero-unit {
-      background:url(../img/portrait-full.png) no-repeat 0 100% transparent !important;
+      background:url(../assets/img/portrait-full.png) no-repeat 0 100% transparent !important;
       min-height: 330px !important;
       .hero-claim {
         padding: @line-height-computed * 2 @line-height-computed * 4 @line-height-computed @navbar-height * 6 !important;
@@ -259,7 +251,7 @@ body > footer {
 }
 
 // Responsive: Large desktops and up
-@media screen and (min-width: @screen-large-desktop) {
+@media screen and (min-width: @screen-lg) {
   #content {
       font-size: @font-size-base + 2;
   }

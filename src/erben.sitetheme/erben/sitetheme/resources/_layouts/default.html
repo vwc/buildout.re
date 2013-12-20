@@ -1,0 +1,39 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en"> <!--<![endif]-->
+  <head>
+    <!-- Meta, title, CSS, favicons, etc. -->
+    {% include head.html %}
+  </head>
+  <body>
+    <a class="sr-only" href="#content">Skip navigation</a>
+    {% include toolbar.html %}
+    {% include brandbar.html %}
+    
+    <div class="jumbotron app-header" id="hero-unit">
+      <div class="container hero-unit">
+        <div class="h1 app-header-title hidden-sm">Reiner Erben</div>
+      </div>
+    </div>
+    <div class="app-content">
+        <div class="container" role="main">
+          <div class="row">
+            <div class="col-xs-12 col-sm-8">
+              {{ content }}
+            </div>
+            <div class="col-xs-12 col-sm-4">
+              {% include sidebar.html %}
+            </div>
+          </div>
+        </div>
+    </div>
+
+    {% include footer.html %}
+    {% include javascript.html %}
+    <div id="webfonts">
+    {% include webfonts.html %}
+    </div>
+  </body>
+</html>

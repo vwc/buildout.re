@@ -1,0 +1,40 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en"> <!--<![endif]-->
+  <head>
+    <!-- Meta, title, CSS, favicons, etc. -->
+    {% include head.html %}
+  </head>
+  <body class="section-work-fm">
+    <a class="sr-only" href="#content">Skip navigation</a>
+    {% include toolbar.html %}
+    <!-- Docs master nav -->
+    {% include navbar.html %}
+
+    {% include brandbar.html %}
+    
+    <div class="jumbotron app-header">
+      <div class="container">
+        <div class="app-deco">
+            <div class="app-decoarrow app-decoarrow-light"></div>
+        </div>
+        <div class="text-center app-header-claim">know how. and who</div>
+        <div class="h1 app-header-title">{{ page.title }}</div>
+      </div>
+    </div>
+    <div class="app-content app-content-tiles">
+        <div class="container" role="main">
+          {{ content }}
+        </div>
+    </div>
+
+    <!-- JS and analytics only. -->
+    {% include footer.html %}
+    {% include javascript.html %}
+    <div id="webfonts">
+    {% include webfonts.html %}
+    </div>
+  </body>
+</html>

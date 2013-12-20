@@ -1,0 +1,85 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en"> <!--<![endif]-->
+  <head>
+    <!-- Meta, title, CSS, favicons, etc. -->
+    {% include head.html %}
+  </head>
+  <body class="section-front-page">
+    <a class="sr-only" href="#content">Skip navigation</a>
+    {% include toolbar.html %}
+    <!-- Docs master nav -->
+    {% include navbar.html %}
+
+    {% include brandbar.html %}
+    
+    <!-- Docs page layout -->
+    <div class="jumbotron app-header app-header-frontpage">
+      <div class="container">
+        <div class="app-deco">
+            <div class="app-decoarrow app-decoarrow-light"></div>
+        </div>
+        <div class="text-center app-header-claim">know how. and who</div>
+        <div class="row">
+            <div class="col-xs-12 col-md-4">
+                <div class="appbox">
+                    <div class="appbox-header">
+                        <img class="img-responsive" src="{{ page.base_url }}assets/img/icon-consulting.png" />
+                        <h2>Consulting</h2>
+                    </div>
+                    <p>Wir entwickeln gemeinsam mit Ihnen Strategien, um
+                        die Wettbewerbsf&auml;higkeit Ihres Unternehmens f&uuml;r morgen
+                        zu sichern.
+                    </p>
+                    <a class="btn btn-primary appbox-btn" href="/consulting">mehr</a>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-4">
+                <div class="appbox">
+                    <div class="appbox-header">
+                        <img class="img-responsive" src="{{ page.base_url }}assets/img/icon-hrm.png" />
+                        <h2>HR Management</h2>
+                    </div>
+                    <div class="appbox-content">
+                        <p>Durch unsere Analysen reagieren Sie auf anstehende Ver&auml;nderungen im Markt mit den richtigen Personalentscheidungen.</p>
+                        <a class="btn btn-primary appbox-btn" href="/hr-management">mehr</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-4">
+                <div class="appbox">
+                <div class="appbox-header">
+                    <img class="img-responsive" src="{{ page.base_url }}assets/img/icon-work-fm.png" />
+                    <h2>Work FM</h2>
+                </div>
+                    <p>Ambitionierte Fachkr&auml;fte finden hier Ihre Herausforderung f&uuml;r die Zukunft.
+                        Wir machen mit Ihnen den n&auml;chsten Schritt! </p>
+                    <a class="btn btn-primary appbox-btn" href="/work-fm">mehr</a>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="app-content">
+        <div class="container" role="main">
+            <div class="app-deco">
+                <div class="app-decoarrow app-decoarrow-default"></div>
+            </div>
+          {{ content }}
+        </div>
+      </div>
+
+    </div>
+
+    {% include footer.html %}
+    <!-- JS and analytics only. -->
+    {% include javascript.html %}
+    <div id="webfonts">
+    {% include webfonts.html %}
+    </div>
+
+  </body>
+</html>
