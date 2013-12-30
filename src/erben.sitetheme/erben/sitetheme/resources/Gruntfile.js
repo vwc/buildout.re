@@ -103,6 +103,12 @@ module.exports = function (grunt) {
                 flatten: true,
                 src: ['assets/ico/*'],
                 dest: 'dist/assets/ico/'
+            },
+            images: {
+                expand: true,
+                flatten: true,
+                src: ['assets/img/*'],
+                dest: 'dist/assets/img/'
             }
         },
 
@@ -149,7 +155,7 @@ module.exports = function (grunt) {
             'clean-source-assets': {
                 path: 'dist/',
                 pattern: '../../assets/',
-                replacement: '../assets/',
+                replacement: '/++theme++erben.sitetheme/assets/',
                 recursive: true
             },
             'clean-source-css': {
@@ -246,7 +252,7 @@ module.exports = function (grunt) {
     grunt.registerTask('dist-cb', ['rev']);
 
     // Template distribution task.
-    grunt.registerTask('dist-html', ['jekyll:theme', 'copy-templates', 'newer:sed']);
+    grunt.registerTask('dist-html', ['jekyll:theme', 'copy-templates', 'sed']);
 
     // Full distribution task.
     grunt.registerTask('dist', ['clean', 'dist-css', 'dist-js', 'dist-html', 'dist-assets']);

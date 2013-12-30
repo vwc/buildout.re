@@ -7155,8 +7155,8 @@ td.visible-print {
   font-family: 'FontAwesome';
   font-style: normal;
   font-weight: normal;
-  src: url('../../assets/fonts/fontawesome-webfont.eot?v=4.0.3');
-  src: url('../../assets/fonts/fontawesome-webfont.eot?#iefix&v=4.0.3') format('embedded-opentype'), url('../../assets/fonts/fontawesome-webfont.woff?v=4.0.3') format('woff'), url('../../assets/fonts/fontawesome-webfont.ttf?v=4.0.3') format('truetype'), url('../../assets/fonts/fontawesome-webfont.svg?v=4.0.3#fontawesomeregular') format('svg');
+  src: url('/++theme++erben.sitetheme/assets/fonts/fontawesome-webfont.eot?v=4.0.3');
+  src: url('/++theme++erben.sitetheme/assets/fonts/fontawesome-webfont.eot?#iefix&v=4.0.3') format('embedded-opentype'), url('/++theme++erben.sitetheme/assets/fonts/fontawesome-webfont.woff?v=4.0.3') format('woff'), url('/++theme++erben.sitetheme/assets/fonts/fontawesome-webfont.ttf?v=4.0.3') format('truetype'), url('/++theme++erben.sitetheme/assets/fonts/fontawesome-webfont.svg?v=4.0.3#fontawesomeregular') format('svg');
 }
 
 .fa {
@@ -10808,6 +10808,11 @@ input.context {
   font-size: 31.5px;
   font-weight: 700;
   color: #000;
+}
+
+.app-navbar {
+  background: transparent;
+  border: none;
 }
 
 #hero-unit {

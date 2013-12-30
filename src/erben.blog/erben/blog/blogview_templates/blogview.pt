@@ -16,7 +16,7 @@
         <div class="hero-claim hidden-sm">
           <div tal:attributes="data-tile string:${context/absolute_url}/@@vwc.tiles.plaintext/claim" />
         </div>
-        <img src="++theme++erben.sitetheme/img/signature.png" 
+        <img src="++theme++erben.sitetheme/assets/img/signature.png" 
           class="hidden-sm" />
       </div>
   </section>

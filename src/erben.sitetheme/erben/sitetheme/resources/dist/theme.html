@@ -18,7 +18,7 @@
 </title>
 
 <!-- Bootstrap core CSS -->
-<link href="../dist/css/styles.css" rel="stylesheet">
+<link href="css/styles.css" rel="stylesheet">
 
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
@@ -81,7 +81,7 @@
   <div class="container app-brandbar-inner">
     <div class="row">
       <div class="col-xs-12 col-lg-8">
-        <nav class="navbar navbar-default" role="navigation">
+        <nav class="navbar navbar-default app-navbar" id="app-navbar" role="navigation">
           <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#app-brandbar-collapse">
@@ -94,7 +94,7 @@
         
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="app-brandbar-collapse">
-            <ul class="nav navbar-nav">
+            <ul class="nav navbar-nav app-navbar-nav" id="app-navbar-nav">
               <li class="active"><a href="#">Home</a></li>
               <li><a href="#">Vita</a></li>
               <li><a href="#">Blog</a></li>
@@ -212,7 +212,8 @@
 
 <script src="../js/application.js"></script>
     <div id="webfonts">
-    <!-- Custom Fonts -->
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+<!-- Custom Fonts -->
 <script type="text/javascript">
   WebFontConfig = {
     google: { families: [ 'Ubuntu:400,700:latin', 'Merriweather:400,400italic,700italic,700:latin' ] }
