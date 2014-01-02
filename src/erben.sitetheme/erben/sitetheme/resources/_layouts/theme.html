@@ -7,30 +7,22 @@
     <!-- Meta, title, CSS, favicons, etc. -->
     {% include head.html %}
   </head>
-  <body class="section-work-fm">
+  <body>
     <a class="sr-only" href="#content">Skip navigation</a>
     {% include toolbar.html %}
-    <!-- Docs master nav -->
-    {% include navbar.html %}
-
     {% include brandbar.html %}
     
-    <div class="jumbotron app-header">
-      <div class="container">
-        <div class="app-deco">
-            <div class="app-decoarrow app-decoarrow-light"></div>
-        </div>
-        <div class="text-center app-header-claim">know how. and who</div>
-        <div class="h1 app-header-title">{{ page.title }}</div>
+    <div class="app-header" id="hero-unit">
+      <div class="container hero-unit">
+        <div class="h1 app-header-title hidden-sm">Reiner Erben</div>
       </div>
     </div>
-    <div class="app-content app-content-tiles">
+    <div class="app-content">
         <div class="container" role="main">
-          {{ content }}
+              {{ content }}
         </div>
     </div>
 
-    <!-- JS and analytics only. -->
     {% include footer.html %}
     {% include javascript.html %}
     <div id="webfonts">

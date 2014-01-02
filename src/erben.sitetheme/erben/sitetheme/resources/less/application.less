@@ -95,7 +95,7 @@ input.context {
   border: none;
 }
 
-#hero-unit {
+.app-header {
   background: @brand-primary;
   margin: @line-height-computed 0;
   .hero-unit {
@@ -113,6 +113,11 @@ input.context {
       font-weight: 700;
       font-size: @font-size-base * 1.5;
     }
+  }
+  .app-header-title {
+      font-family: 'Ubuntu';
+      font-weight: 700;
+      color: #000;
   }
 }
 
@@ -223,7 +228,7 @@ body > footer {
 // responsive fixes
 
 @media (min-width: @screen-sm) and (max-width: @screen-md) {
-  .hero-unit h1 {
+  .app-header-title {
     margin-left: 300px;
   }
 }
@@ -240,7 +245,7 @@ body > footer {
     overflow:hidden;
     background-size:cover;
   }
-  .hero-unit h1,
+  .app-header-title,
   .hero-unit img {
     margin-left: 300px;
   }

@@ -7155,8 +7155,8 @@ td.visible-print {
   font-family: 'FontAwesome';
   font-style: normal;
   font-weight: normal;
-  src: url('/++theme++erben.sitetheme/assets/fonts/fontawesome-webfont.eot?v=4.0.3');
-  src: url('/++theme++erben.sitetheme/assets/fonts/fontawesome-webfont.eot?#iefix&v=4.0.3') format('embedded-opentype'), url('/++theme++erben.sitetheme/assets/fonts/fontawesome-webfont.woff?v=4.0.3') format('woff'), url('/++theme++erben.sitetheme/assets/fonts/fontawesome-webfont.ttf?v=4.0.3') format('truetype'), url('/++theme++erben.sitetheme/assets/fonts/fontawesome-webfont.svg?v=4.0.3#fontawesomeregular') format('svg');
+  src: url('/++theme++erben.sitetheme/dist/assets/fonts/fontawesome-webfont.eot?v=4.0.3');
+  src: url('/++theme++erben.sitetheme/dist/assets/fonts/fontawesome-webfont.eot?#iefix&v=4.0.3') format('embedded-opentype'), url('/++theme++erben.sitetheme/dist/assets/fonts/fontawesome-webfont.woff?v=4.0.3') format('woff'), url('/++theme++erben.sitetheme/dist/assets/fonts/fontawesome-webfont.ttf?v=4.0.3') format('truetype'), url('/++theme++erben.sitetheme/dist/assets/fonts/fontawesome-webfont.svg?v=4.0.3#fontawesomeregular') format('svg');
 }
 
 .fa {
@@ -10815,28 +10815,34 @@ input.context {
   border: none;
 }
 
-#hero-unit {
+.app-header {
   margin: 20px 0;
   background: #6fbc1a;
 }
 
-#hero-unit .hero-unit {
+.app-header .hero-unit {
   min-height: 110px;
   padding: 30px 0 10px 10px;
-  background: url(../assets/img/eyes-inverse.png) no-repeat 0 0 transparent;
+  background: url(/++theme++erben.sitetheme/dist/assets/img/eyes-inverse.png) no-repeat 0 0 transparent;
 }
 
-#hero-unit .hero-unit h1 {
+.app-header .hero-unit h1 {
   font-family: 'Ubuntu';
   font-weight: 700;
   color: #000;
 }
 
-#hero-unit .hero-unit .hero-claim {
+.app-header .hero-unit .hero-claim {
   padding: 20px 20px 0 0;
   font-family: 'Ubuntu';
   font-size: 21px;
   font-weight: 700;
+}
+
+.app-header .app-header-title {
+  font-family: 'Ubuntu';
+  font-weight: 700;
+  color: #000;
 }
 
 .blog-list .blog-list-entry .page-header {
@@ -10977,7 +10983,7 @@ body > footer #site-footer-social-links a {
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
-  .hero-unit h1 {
+  .app-header-title {
     margin-left: 300px;
   }
 }
@@ -10991,16 +10997,16 @@ body > footer #site-footer-social-links a {
     height: 245px;
     overflow: hidden;
     text-indent: -3000px;
-    background: url(../assets/img/badge.png) no-repeat 0 0 transparent;
+    background: url(/++theme++erben.sitetheme/dist/assets/img/badge.png) no-repeat 0 0 transparent;
     background-size: cover;
   }
-  .hero-unit h1,
+  .app-header-title,
   .hero-unit img {
     margin-left: 300px;
   }
   body.template-blog-view .hero-unit {
     min-height: 330px !important;
-    background: url(../assets/img/portrait-full.png) no-repeat 0 100% transparent !important;
+    background: url(/++theme++erben.sitetheme/dist/assets/img/portrait-full.png) no-repeat 0 100% transparent !important;
   }
   body.template-blog-view .hero-unit .hero-claim {
     padding: 40px 80px 20px 300px !important;

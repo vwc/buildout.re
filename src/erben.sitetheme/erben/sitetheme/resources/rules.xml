@@ -8,7 +8,7 @@
     <!-- erben to add minimal theme template for the
          tiles editiong overlays -->
 
-    <!-- <theme href="calendar.html" css:if-content="body.section-termine"  /> -->
+     <theme href="dist/calendar.html" css:if-content="body.section-termine"  />
     
     <!-- Rules applying to a standard Plone web page -->
     <rules css:if-content="#visual-portal-wrapper">
@@ -81,7 +81,8 @@
         </rules>
 
         <replace css:content-children="#content" 
-            css:theme-children="#content" />
+            css:theme-children="#content"
+            css:if-not-content="body.section-termine" />
 
         <after css:theme="#content"
             css:content="#viewlet-below-content" />

@@ -155,7 +155,13 @@ module.exports = function (grunt) {
             'clean-source-assets': {
                 path: 'dist/',
                 pattern: '../../assets/',
-                replacement: '/++theme++erben.sitetheme/assets/',
+                replacement: '/++theme++erben.sitetheme/dist/assets/',
+                recursive: true
+            },
+            'clean-source-assets-next': {
+                path: 'dist/',
+                pattern: '../assets/',
+                replacement: '/++theme++erben.sitetheme/dist/assets/',
                 recursive: true
             },
             'clean-source-css': {
@@ -229,6 +235,7 @@ module.exports = function (grunt) {
     // Copy jekyll generated templates and rename for diazo
     grunt.registerTask('copy-templates', '', function () {
         grunt.file.copy('_site/index.html', 'dist/theme.html');
+        grunt.file.copy('_site/calendar/index.html', 'dist/calendar.html');
     });
 
     // Docs HTML validation task
