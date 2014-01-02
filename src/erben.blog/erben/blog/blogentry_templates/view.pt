@@ -19,6 +19,12 @@
           </h1>
         </header>
         <section tal:condition="context/text">
+          <div class="thumbnail pull-right" tal:condition="context/image">
+            <img tal:define="scales context/@@images"
+               tal:replace="structure python: scales.tag('image',
+                            scale='mini', direction='down')"
+               />
+          </div>
           <div tal:replace="structure context/text/output" />
         </section>
         <aside>

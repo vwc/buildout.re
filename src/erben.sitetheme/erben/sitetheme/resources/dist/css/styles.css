@@ -10966,6 +10966,20 @@ input.context {
   color: #555555;
 }
 
+.blog-entry-teaser img {
+  display: block;
+  display: inline-block;
+  height: auto;
+  max-width: 100%;
+  padding: 4px;
+  line-height: 1.428571429;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 0;
+  -webkit-transition: all 0.2s ease-in-out;
+          transition: all 0.2s ease-in-out;
+}
+
 body > footer {
   padding: 20px 0;
   margin-top: 20px;

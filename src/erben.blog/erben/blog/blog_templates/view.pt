@@ -27,15 +27,33 @@
                 tal:content="item/Title" />
           </h2>
         </div>
-          <p class="blog-entry-description"
-            tal:condition="item/Description"
-            tal:content="item/Description" />
+        <div class="blog-entry-teaser"
+          tal:define="item_obj item/getObject">
+            <div class="row" tal:condition="item_obj/image">
+              <div class="col-xs-12 col-sm-8">
+                 <p class="blog-entry-description"
+                  tal:condition="item/Description"
+                  tal:content="item/Description" />
+              </div>
+              <div class="col-xs-12 col-sm-4">
+                <img tal:define="scales item_obj/@@images"
+                  tal:replace="structure python: scales.tag('image',
+                               scale='mini', direction='down')"
+                  />
+              </div>
+            </div>
+            <tal:block tal:condition="not:item_obj/image">
+              <p class="blog-entry-description"
+                tal:condition="item/Description"
+                tal:content="item/Description" />
+            </tal:block>
 
-        <a href="" class="read-more"
-              tal:attributes="href item/getURL">
-          <i class="icon-chevron-sign-right"></i>
-          Weiterlesen
-        </a>
+            <a href="" class="read-more"
+                  tal:attributes="href item/getURL">
+              <i class="icon-chevron-sign-right"></i>
+              Weiterlesen
+            </a>
+        </div>
       </article>
       <hr>
     </tal:block>
