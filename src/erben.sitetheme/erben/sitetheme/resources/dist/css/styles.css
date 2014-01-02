@@ -10779,6 +10779,10 @@ input.context {
   border-radius: 0;
 }
 
+#topbar-brand {
+  text-align: center;
+}
+
 #topbar-brand h3 {
   margin-bottom: 0;
   font-size: 35px;
@@ -10843,6 +10847,10 @@ input.context {
   font-family: 'Ubuntu';
   font-weight: 700;
   color: #000;
+}
+
+.app-header-frontpage .app-header-title {
+  display: none;
 }
 
 .blog-list .blog-list-entry .page-header {
@@ -11002,11 +11010,15 @@ body > footer #site-footer-social-links a {
 
 @media (min-width: 768px) and (max-width: 992px) {
   .app-header-title {
+    display: block;
     margin-left: 300px;
   }
 }
 
 @media screen and (min-width: 992px) {
+  #topbar-brand {
+    text-align: left;
+  }
   #brandname {
     position: absolute;
     z-index: 1;

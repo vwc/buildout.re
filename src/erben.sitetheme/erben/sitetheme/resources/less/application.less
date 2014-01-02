@@ -62,6 +62,7 @@ input.context {
 }
 
 #topbar-brand {
+  text-align: center;
   h3 {
     color: #000;
     margin-bottom: 0px;
@@ -118,6 +119,12 @@ input.context {
       font-family: 'Ubuntu';
       font-weight: 700;
       color: #000;
+  }
+}
+
+.app-header-frontpage {
+  .app-header-title {
+    display: none;
   }
 }
 
@@ -238,12 +245,16 @@ body > footer {
 
 @media (min-width: @screen-sm) and (max-width: @screen-md) {
   .app-header-title {
+    display: block;
     margin-left: 300px;
   }
 }
 
 // Responsive: Desktops and up
 @media screen and (min-width: @screen-md) {
+  #topbar-brand {
+    text-align: left;
+  }
   #brandname {
     background:url(../assets/img/badge.png) no-repeat 0 0 transparent;
     display: block;
