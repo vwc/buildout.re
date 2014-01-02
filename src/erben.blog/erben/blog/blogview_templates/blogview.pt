@@ -10,9 +10,9 @@
 <metal:main fill-slot="main">
   <metal:content-core define-macro="main">
 
-  <section id="hero-unit">
+  <section class="app-header" id="hero-unit">
       <div class="container hero-unit hero-unit-highlight">
-        <h1 class="hidden-sm">Reiner Erben</h1>
+        <h1 class="h1 app-header-title hidden-sm">Reiner Erben</h1>
         <div class="hero-claim hidden-sm">
           <div tal:attributes="data-tile string:${context/absolute_url}/@@vwc.tiles.plaintext/claim" />
         </div>
