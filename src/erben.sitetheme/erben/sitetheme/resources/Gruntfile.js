@@ -236,6 +236,7 @@ module.exports = function (grunt) {
     grunt.registerTask('copy-templates', '', function () {
         grunt.file.copy('_site/index.html', 'dist/theme.html');
         grunt.file.copy('_site/calendar/index.html', 'dist/calendar.html');
+        grunt.file.copy('_site/tileedit/index.html', 'dist/tileedit.html');
     });
 
     // Docs HTML validation task

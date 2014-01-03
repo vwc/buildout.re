@@ -7,6 +7,7 @@
     <!-- Add alternativ theme templates -->
     <!-- erben to add minimal theme template for the
          tiles editiong overlays -->
+    <theme href="dist/tileedit.html" if-path="@@edit-tile" />
 
      <theme href="dist/calendar.html" css:if-content="body.section-termine"  />
     
