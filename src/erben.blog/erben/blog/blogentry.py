@@ -8,7 +8,6 @@ from plone.namedfile.interfaces import IImageScaleTraversable
 from plone.app.textfield import RichText
 from plone.namedfile.field import NamedBlobImage
 
-from plone.app.discussion.interfaces import IConversation
 from erben.blog import MessageFactory as _
 
 
@@ -19,6 +18,16 @@ class IBlogEntry(form.Schema, IImageScaleTraversable):
     text = RichText(
         title=_(u"Blog Entry"),
         description=_(u"Please enter main body text for this blog entry"),
+        required=False,
+    )
+    form.fieldset(
+        'details',
+        label=_(u"Details"),
+        fields=['image', 'pressitem']
+    )
+    image = NamedBlobImage(
+        title=_(u"Preview Image"),
+        description=_(u"Upload optional preview image displayed in listings"),
         required=False,
     )
     pressitem = schema.Bool(
@@ -46,11 +55,3 @@ class View(grok.View):
     grok.context(IBlogEntry)
     grok.require('zope2.View')
     grok.name('view')
-
-    def commentsEnabled(self, ob):
-        conversation = IConversation(ob)
-        return conversation.enabled()
-
-    def commentCount(self, ob):
-        conversation = IConversation(ob)
-        return len(conversation)

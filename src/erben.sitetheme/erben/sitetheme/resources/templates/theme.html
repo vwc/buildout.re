@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>erben Theme, based on Twitter Bootstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="less/styles.less" rel="stylesheet/less" type="text/css">
+    <!-- Responsive styles - enable if necessary -->
+    <!--<link href="../assets/css/bootstrap-responsive.css" rel="stylesheet">-->
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js"></script>
+    <script type="text/javascript" src="http://cdn.jquerytools.org/1.2.6/all/jquery.tools.min.js"></script>
+    <script type="text/javascript" src="js/less-1.3.3.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script src="../js/application.js"></script>
+  </head>
+
+  <body>
+
+    <header id="app-toolbar" class="navbar navbar-inverse navbar-fixed-top">
+        <a class="navbar-brand" href="#">Plone Toolbar</a>
+    </header>
+
+    <header id="topbar" class="topbar">
+      <div class="topbar-inner container">
+        <div class="row">
+          <div class="col col-lg-8">
+            <nav class="main-navbar">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <div class="nav-collapse collapse navbar-responsive-collapse">
+              <ul class="nav nav-pills" id="main-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Vita</a></li>
+                <li><a href="#">Blog</a></li>
+              </ul>
+            </div>
+            </nav>
+          </div>
+          <div class="col col-lg-4" id="topbar-brand">
+            <a href="" id="brandname">
+              Reiner Erben
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section id="hero-unit">
+      <div class="container hero-unit">
+        <h1 class="hidden-sm">Reiner Erben</h1>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="row">
+        <div class="col col-lg-8" id="portal-column-content">
+          <div id="content">
+            <header class="page-header">
+              <h1>Starter template <small>The barebone minimal</small></h1>
+            </header>
+            <p class="lead">Use this document as a way to quick start any new project.<br> All you get is this message and a barebones HTML document.</p>
+            <hr>
+              <p>therefore somewhat bad when it comes to line length, width and overall layout</p>
+              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.</p>
+              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.</p>
+          </div>
+        </div>
+        <div class="col col-lg-4">
+          <aside id="sidebar">
+            <form id="search" class="hidden-sm" name="search" action="/search">
+                <div class="input-group xspan12">
+                <input id="search-site"
+                    type="text"
+                    name="SearchableText"
+                    title="Search this site&hellip;" accesskey="4"
+                    class="inputLabel roundedleft" size="15"
+                    />
+                <span class="input-group-btn">
+                <button class="btn"
+                    type="submit"
+                    value="Search"
+                    id="search-site-button">
+                    <i class="icon-search"></i>&nbsp;
+                </button>
+                </span>
+                </div>
+            </form>
+            <div id="sidebar-content">
+            </div>
+            <div class="tile tile-twr">
+              <a class="twitter-timeline"  href="https://twitter.com/reinererben"  data-widget-id="345096033270919168">Tweets von @reinererben</a>
+            </div>
+            <div class="tile tile-cta text-right">
+              <a href="http://gruene-augsburg.de/meta-navigation/mitmachen/eintreten/"
+                class="tile-link">
+                <img src="img/panel-cta-signin.png" />
+              </a>
+            </div>
+            <div class="tile tile-cta text-right">
+              <a href="http://www.gruene.de/themen/wirtschaft-arbeit/das-steuerkonzept-der-gruenen-mit-rechenbeispielen.html"
+                class="tile-link">
+                <img src="img/panel-cta-taxes.png" />
+              </a>
+            </div>
+            <div class="tile tile-cta text-right">
+              <a href="http://www.gruene.de/themen/atomausstieg-energiewende/atomausstieg-einfach-selber-machen-und-jetzt-strom-wechseln.html"
+                class="tile-link">
+                <img src="img/panel-cta-energy.jpg" />
+              </a>
+            </div>
+            <div class="tile text-right">
+              <img src="img/logo-buegrue.png" />
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section> <!-- /container -->
+
+    <footer id="site-footer">
+      <div class="container" id="footer">
+        <div class="row">
+          <div class="col col-lg-8">
+            <p class="footer-content">
+              <a href="/impressum" class="footer-link"
+                rel="nofollow">
+                Impressum
+              </a>
+            </p>
+          </div>
+          <div class="col col-lg-4">
+            <p  id="site-footer-social-links" class="text-right">
+              <a href="http://twitter.com/reinererben"
+                rel="nofollow">
+                <i class="icon-twitter icon-2x"></i>
+              </a>
+            </p>
+          </div>
+      </div>
+    </footer>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    <script type="text/javascript">
+    WebFontConfig = {
+      google: { families: [ 'Ubuntu:400,700:latin', 'Merriweather:400,400italic,700italic,700:latin' ] }
+    };
+    (function() {
+      var wf = document.createElement('script');
+      wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+        '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+      wf.type = 'text/javascript';
+      wf.async = 'true';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(wf, s);
+    })(); </script>
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(["trackPageView"]);
+  _paq.push(["enableLinkTracking"]);
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://fuenfzueins.vorwaerts-werbung.de/piwik/";
+    _paq.push(["setTrackerUrl", u+"piwik.php"]);
+    _paq.push(["setSiteId", "20"]);
+    var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+    g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+  </body>
+</html>
