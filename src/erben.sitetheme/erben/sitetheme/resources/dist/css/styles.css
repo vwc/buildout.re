@@ -10999,6 +10999,10 @@ body > footer {
   border-top: 1px solid #eeeeee;
 }
 
+.app-footer-content a {
+  color: #fff;
+  padding-right: 20px;
+}
 body > footer .footer-content a {
   color: #eeeeee;
 }
@@ -11027,7 +11031,7 @@ body > footer #site-footer-social-links a {
     height: 229px;
     overflow: hidden;
     text-indent: -3000px;
-    background: url(/++theme++erben.sitetheme/dist/assets/img/badge.png) no-repeat 0 0 transparent;
+  /*  background: url(/++theme++erben.sitetheme/dist/assets/img/badge.png) no-repeat 0 0 transparent;*/
     background-size: cover;
   }
   .app-header-title,
